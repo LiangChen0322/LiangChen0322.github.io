@@ -1,0 +1,62 @@
+<html>  
+<head>  
+<title>图片切换</title>  
+<meta http-equiv="content-type" content="text/html; charset=UTF8">  
+<mce:script language=JavaScript><!--  
+            var imgUrl=new Array();  
+            var adNum=1;  
+            imgUrl[1]="images/add16.gif";   
+            imgUrl[2]="images/add.gif";   
+            imgUrl[3]="images/add24.gif";   
+            var imgPre=new Array();  
+            for (i=1;i<3;i++){  
+                imgPre=new Image();  
+                imgPre.src=imgUrl;  
+            }  
+          function setTransition(){  
+             if (document.all){  
+                imgUrlrotator.filters.revealTrans.Transition=Math.floor(Math.random()*20);  
+                imgUrlrotator.filters.revealTrans.apply();  
+             }  
+          }  
+  
+         function playTransition(){  
+            if (document.all){  
+                imgUrlrotator.filters.revealTrans.play();  
+            }  
+         }  
+         function nextAd(){  
+             if(adNum<imgUrl.length-1)adNum++ ;  
+             else adNum=1;  
+             setTransition();  
+             document.images.imgUrlrotator.src=imgUrl[adNum];  
+             playTransition();  
+             theTimer=setTimeout("nextAd()", 5000);  
+         }  
+           
+         window.onload=function(){  
+              document.body.filters.revealTrans.Transition=Math.floor(Math.random()*20);  
+              document.body.filters.revealTrans.apply();  
+         }  
+  
+         document.onclick=function(){                      
+              document.body.filters.revealTrans.Transition=Math.floor(Math.random()*20);  
+              document.body.filters.revealTrans.apply(); document.body.style.backgroundColor="rgb("+Math.round(Math.random()*255)+","+Math.round(Math.random()*255)+","+Math.round(Math.random()*255)+")";  
+              document.body.filters.revealTrans.play();  
+         }  
+  
+         window.onunload=function(){  
+              document.body.filters.revealTrans.Transition=Math.floor(Math.random()*20);  
+              document.body.filters.revealTrans.apply();   
+              document.body.style.backgroundColor="#eeeeee";  
+              document.body.filters.revealTrans.play();  
+         }  
+// --></mce:script>  
+</head>  
+  
+<body style="background-color:#cccccc;filter:revealTrans(duration=2,transition=20)" mce_style="background-color:#cccccc;filter:revealTrans(duration=2,transition=20)">  
+     <div align="center">  
+       <img style="FILTER:revealTrans(duration=2,transition=20)" mce_style="FILTER:revealTrans(duration=2,transition=20)" src="javascript:nextAd()" mce_src="javascript:nextAd()" border=0 name=imgUrlrotator>  
+     </div>  
+</body>  
+</html>  
