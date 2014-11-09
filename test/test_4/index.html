@@ -1,0 +1,240 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery一款不错的单页面全屏滚动特效 - 素材目录99447.com</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link href="static/spring/css/basic.css?ver=20140623" rel="stylesheet" type="text/css" />
+<link href="static/spring/css/head.css?ver=20140623" rel="stylesheet" type="text/css" />
+<link href="static/spring/css/index.css?ver=20140623" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var siteurl = '';
+var staticurl = 'static/';
+var dataurl = 'http://img2.pp.cc/';
+</script><script src="static/common/js/jquery.min.js?ver=20140623" type="text/javascript"></script>
+<script src="static/common/js/global.min.js?ver=20140623" type="text/javascript"></script>
+<script src="static/common/js/jquery.mousewheel.min.js?ver=20140623" type="text/javascript"></script>
+<script src="static/common/js/index_mousewheel.js" type="text/javascript" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+var _skin = UI.cookie('pp_member_skin');
+bodySkin(_skin);
+</script>
+<div class="first_mousewheel">
+<!-----头部----->
+<div class="head" id="head">
+    <div class="head_lef">
+        <h1><a href="" title="JS代码网" class="tencent"></a></h1>
+        <ul>
+                        <li><a href="timer/">腾讯平台</a></li>
+            <li><a href="time/">新浪平台</a></li>
+                        <li class="more_app">
+                <a href="javascript:;">更多应用<i></i></a>
+                <div>
+                                        <h3>腾讯平台<span></span></h3>
+                    <a href="weitu/">微图</a>
+                    <a href="ceshi/">微测试</a>
+                    <a href="fenxi/">微分析</a>
+                    <a href="count/">转播统计</a>
+                    <h3>新浪平台<span></span></h3>
+                    <a href="http://www.99447.com/?weitu/">微图</a>
+                    <a href="http://www.99447.com/?ceshi/">微测试</a>
+                                    </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="head_rig">
+        <i class="tel"></i>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.
+            </div>
+    
+</div>
+<!-----头部结束----->
+<div class="index_mian">
+    <div class="index_banner">
+        <ul>
+            <li class="img_01"></li>
+            <li class="img_02"></li>
+        </ul>
+    </div>
+    
+</div>
+<!-----banner登录结束----->
+<div class="scroll_top">
+    <div class="middle">
+        <h2>皮皮时光机网站全屏滚动代码特效</h2>
+        <h3>皮皮时光机，是基于腾讯微博和新浪微博的第三方应用；主推定时发送微博服务，以高效、稳定著称</h3>
+        <div>
+            <a href="javascript:void(0)">
+                查看详情<br /><br />
+                <i></i>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="mousewheel_box"></div>
+
+<div class="index_scroll">
+    <div class="scroll_box scroll_01">
+        <div class="middle">
+            <h2>定时发送、转发微博</h2>
+            <h3>您可以将编辑好的微博内容，设置在未来某一分钟由皮皮时光机代您自动发送；并在录入微博内容时，提供在线修改图片，裁剪大小、去水印、加水印等贴心功能</h3>
+            <p><img src="static/spring/index_images/scroll_01.png" /></p>
+        </div>
+    </div>
+    <div class="scroll_box scroll_02">
+        <div class="middle">
+            <h2>微博互动</h2>
+            <h3>多个微博账号授权皮皮时光机后，无需分别登录微博，即可轻松完成与粉丝转发、评论等互动交流</h3>
+            <p><img src="static/spring/index_images/scroll_02.png" /></p>
+        </div>
+    </div>
+    <div class="scroll_box scroll_03">
+        <div class="middle">
+            <h2>多微博平台同步</h2>
+            <h3>您可以将编辑好的微博内容，一次同时发布至多个微博平台。</h3>
+            <p><img src="static/spring/index_images/scroll_03.png" /></p>
+        </div>
+    </div>
+    <div class="scroll_box scroll_04">
+        <div class="middle">
+            <h2>多人协同</h2>
+            <h3>您可以将一个微博账号，同时分配给多个人来管理；灵活的权限分配，让您不必为账号安全性担忧</h3>
+            <p><img src="static/spring/index_images/scroll_04.png" /></p>
+        </div>
+    </div>
+    <div class="scroll_box scroll_05">
+        <div class="middle">
+            <h2>微博内容库</h2>
+            <h3>皮皮时光机为您提供上千万条的优质微博内容，以便您在运营微博时参考使用</h3>
+            <p><img src="static/spring/index_images/scroll_05.png" /></p>
+        </div>
+    </div>
+</div>
+<div class="scroll_navs">
+    <a href="javascript:void(0)" class="current">1</a>
+    <a href="javascript:void(0)">2</a>
+    <a href="javascript:void(0)">3</a>
+    <a href="javascript:void(0)">4</a>
+    <a href="javascript:void(0)">5</a>
+</div>    
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+//头部更多应用下拉
+$(".more_app a:first").click(function(){
+$(this).siblings("div").show();
+});
+$(".more_app div").mouseenter(function(){
+$(this).show();
+}).mouseleave(function(){
+$(this).hide();
+});
+/*用户名下拉列表*/
+$(".head_rig .user .nick").click(function(){
+$(this).siblings("ul").show();
+});
+$(".head_rig .user ul:first").mouseenter(function(){
+$(this).show();
+}).mouseleave(function(){
+$(this).hide();
+});
+});
+/*banner幻灯js*/
+$(function(){
+var aPage = $('.index_login .lef a');		//分页按钮
+var aImg = $('.index_banner ul li');		//图像集合
+var iSize = aImg.size();		//图像个数
+var index = 0;		//切换索引
+var t;
+$('.up').click(function(){		//左边按钮点击
+index--;
+if(index<0){
+index=iSize-1
+}
+change(index);
+})
+$('.down').click(function(){    //右边按钮点击
+index++;
+if(index>iSize-1){
+index=0
+}
+change(index);
+})
+//分页按钮点击
+aPage.click(function(){
+index = $(this).index();
+change(index);
+});
+//切换过程
+function change(index){
+aPage.removeClass('current');
+aPage.eq(index).addClass('current');
+aImg.stop();
+//隐藏除了当前元素，所以图像
+aImg.eq(index).siblings().animate({opacity:0},1000);
+//显示当前图像
+aImg.eq(index).animate({opacity:1},1000);
+}
+function autoshow() {
+index=index+1;
+if(index<=iSize-1){
+   change(index);
+}else{
+index=0;
+change(index);
+}	
+}
+int=setInterval(autoshow,5000);
+function clearInt() {
+$('.banner_page a.up,.banner_page a.down').mouseover(function() {
+clearInterval(int);
+})
+}
+function setInt() {
+$('.banner_page a.up,.banner_page a.down').mouseout(function() {
+int=setInterval(autoshow,5000);
+})
+}
+clearInt();
+setInt();
+});
+/*输入框效果*/
+$(".input_bar").click(function(){
+var it = $(this).parents("li").find("input.txt");
+if(it.val() == ""){
+$(this).hide();
+it.focus();
+}
+});
+$("input.txt").blur(function(){
+if($(this).val() == ""){
+$(this).parents("li").find(".input_bar").show();
+}
+}).keyup(function(){
+$(this).next(".input_bar").hide();
+});
+UI.getScript("static/spring/js/login.min.js?ver=20140623", function() {
+    onLoginReady();
+});
+function accountLogin(type, app)
+{
+    $.get('member.php?mod=bind&action=request&referer=http%3A%2F%2Ft.pp.cc%2F' + app + '&type=' + type + '&app=' + app + '&sinav=3&random=' + UI.random(), function(data) {
+        location.href = data;
+    });
+    }
+function onLoginSwitchReady(){}
+
+SyncLoginState(true);
+function LC_onPageSync(r) 
+{
+    if (r) {
+    	location.href = siteurl;
+    }
+}
+</script>
+</body>
+</html>
