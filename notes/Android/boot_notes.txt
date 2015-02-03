@@ -1,0 +1,18 @@
+part   1::         MRD   start 0x00080000, size 0x00080000
+part   2::        MRD1   start 0x00100000, size 0x00080000
+part   3::        MEP2   start 0x00180000, size 0x00100000
+part   4::        DTIM   start 0x00280000, size 0x00200000
+part   5:: rbootloader   start 0x00480000, size 0x000f0000
+part   6::    recovery   start 0x00580000, size 0x01100000
+part   7:: pbootloader   start 0x01680000, size 0x00100000
+part   8::        boot   start 0x01780000, size 0x01000000
+part   9::      system   start 0x02780000, size 0x40000000
+part  10::        misc   start 0x42780000, size 0x00a00000
+part  11::       radio   start 0x43180000, size 0x03000000
+part  12::         NVM   start 0x46180000, size 0x02000000
+part  13::      secure   start 0x48180000, size 0x04000000
+part  14::       cache   start 0x4c180000, size 0x10000000
+part  15::    userdata   start 0x5c180000, size 0x143e60000
+usb phy inited 0x0!
+Fastboot serial no set as:PXA1908DKBV10N102
+
