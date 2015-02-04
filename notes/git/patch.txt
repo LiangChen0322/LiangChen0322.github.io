@@ -1,0 +1,4 @@
+
+Git的Patch功能
+http://www.cnblogs.com/y041039/articles/2411600.html
+

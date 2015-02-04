@@ -1,0 +1,4 @@
+
+git删除错误提交的commit
+http://blog.csdn.net/hshl1214/article/details/8084423
+
