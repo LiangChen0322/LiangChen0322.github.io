@@ -2,3 +2,12 @@
 http://blog.chinaunix.net/uid-24951403-id-2212589.html
 http://blog.chinaunix.net/uid-28392723-id-3471441.html
 
+便已前后对比：
+lc@chen-PC:uboot-2014$ ls
+Android.mk  board       config.mk  doc      examples  lib       Makefile  net     rules.mk         spl         tools       u-boot.elf    u-boot.map
+api         boards.cfg  CREDITS    drivers  fs        Licenses  mkconfig  post    scripts          System.map  u-boot      u-boot-elf.o  u-boot.srec
+arch        common      disk       dts      include   MAKEALL   nand_spl  README  snapshot.commit  test        u-boot.bin  u-boot.lds
+lc@chen-PC:uboot-2014$ make distclean
+lc@chen-PC:uboot-2014$ ls
+Android.mk  arch   boards.cfg  config.mk  disk  drivers  examples  include  Licenses  Makefile  nand_spl  post    rules.mk  snapshot.commit  test
+api         board  common      CREDITS    doc   dts      fs        lib      MAKEALL   mkconfig  net       README  scripts   spl              tools

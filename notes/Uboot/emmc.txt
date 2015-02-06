@@ -1,0 +1,7 @@
+
+uboot下emmc内容烧写（拷贝）步骤
+http://blog.sina.com.cn/s/blog_413d250e0102uxl1.html
+
+分享tiny4412,emmc烧录u-boot, 支持fastboot模式烧写emmc
+http://www.arm9home.net/read.php?tid=83474
+
