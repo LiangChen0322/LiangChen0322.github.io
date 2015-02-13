@@ -1,0 +1,94 @@
+U-Boot 2014.01-00738-gfdbf4cd (Feb 13 2015 - 01:32:08)
+Marvell PXA1908 DKB
+
+SoC:   PXA1908 88AP1908-A0
+I2C:   ready
+DRAM:  1016 MiB
+relocation Offset is: 00339000
+*************************************
+Fabric/LPM/DFC/DVC held status dump:
+DVC[92]
+FCDONE[0]
+PMULPM[bd]
+CORELPM[14a52950]
+PLL[4b202b]
+*************************************
+Board PMIC init
+PowerUP log register:0x20
+ ------------------------------------
+|     name(power up)      |  status  |
+|-------------------------|----------|
+|    ONKEY_WAKEUP         |    0     |
+|    CHG_WAKEUP           |    0     |
+|    EXTON_WAKEUP         |    0     |
+|    SMPL_WU_LOG          |    0     |
+|    RTC_ALARM_WAKEUP     |    0     |
+|    FAULT_WAKEUP         |    1     |
+|    BAT_WAKEUP           |    0     |
+ ------------------------------------
+PowerDown log register1:0x0
+ -------------------------------
+|  name(power down1) |  status  |
+|--------------------|----------|
+|    OVER_TEMP       |    0     |
+|    UV_VANA5        |    0     |
+|    SW_PDOWN        |    0     |
+|    FL_ALARM        |    0     |
+|    WD              |    0     |
+|    LONG_ONKEY      |    0     |
+|    OV_VSYS         |    0     |
+|    RTC_RESET       |    0     |
+ -------------------------------
+PowerDown log register2:0x0
+ -------------------------------
+|  name(power down2) |  status  |
+|--------------------|----------|
+|    HYB_DONE        |    0     |
+|    UV_VBAT         |    0     |
+|    HW_RESET        |    0     |
+|    PGOOD_PDOWN     |    0     |
+|    LONKEY_RTC      |    0     |
+ -------------------------------
+Can't find PMIC:88pm886_test
+PMIC init done!
+batt_marvell_init: PMIC: 0x0 integrated with charger/fuelgauge
+MMC:   mv_sdh: 0, mv_sdh: 1, mv_sdh: 2
+*** Warning - bad CRC, using default environment
+
+ACK received
+ACK received
+ACK received
+read sharp panel id:0x83941a
+LCD: it is hx8394 panel
+LCD choose PLL1 as clk source!
+In:    serial
+Out:   serial
+Err:   serial
+power up mode - power supply mode
+Board Serial Number :PXA1908DKBV10N068
+pm886_buck_hex2volt: buck=1, uV=1100000, hex= 40
+cur 1100mV, tgt 1250mV
+pm886_buck_volt2hex: buck=1, uV=1250000, hex= 52
+Set VBUCK1 to 1250mV
+Increase Vcore 1100mV->1250mV done!
+DDR FC start: DDR 156 -> 312
+DDR FC end: DDR 156 -> 312
+AXI FC start: AXI 104 -> 156
+AXI FC end: AXI 104 -> 156
+CORE FC start: 312 -> 832
+CORE FC end: 312 -> 832
+mmc2(part 0) is current device
+
+MMC read: dev # 2, block # 2198528, count 1 ... 1 blocks read: O
+K
+__get_cp_ddr_range: image(0x41524249) start: 0x06000000, end: 0x
+08000000
+mmc2(part 0) is current device
+
+MMC read: dev # 2, block # 2247680, count 1 ... 1 blocks read: O
+K
+__get_cp_ddr_range: image(0x41524232) start: 0x06000000, end: 0x
+08000000
+Net:   usb_ether
+Hit any key to stop autoboot:  0 
+
